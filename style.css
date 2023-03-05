@@ -1,0 +1,116 @@
+body {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 50vw;
+  padding: 16px;
+}
+.page__header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  gap: 8px;
+}
+.page__header .title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100px;
+}
+.page__header .title > p {
+  margin: 0px;
+  font-size: 45px;
+  font-family: Garamond;
+}
+.page__header .title > p:nth-child(2) {
+  font-size: 30px;
+  font-family: Linux Libertine;
+  font-feature-settings: "ss05";
+  padding-bottom: 5px;
+}
+.page__body {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+.page__body .title > h1 {
+  font-family: var(--font-serif), "Noto Serif", Georgia, serif;
+  line-height: 1.15;
+  font-weight: 700;
+  font-size: 3em;
+}
+.page__body .content {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input {
+  height: 40px;
+  border: none;
+  border-bottom: solid 1px teal;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+button {
+  height: 40px;
+  border-radius: 8px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-list {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  display: flex;
+  max-height: 200px;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: white;
+  width: 50vw;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: solid 1px lightgrey;
+  gap: 8px;
+  cursor: pointer;
+}
+.result-card p {
+  margin: 0px;
+}
+.result-card h4 {
+  margin: 0px;
+}
+
+.result-card:hover {
+  background-color: lightgray;
+}/*# sourceMappingURL=style.css.map */
